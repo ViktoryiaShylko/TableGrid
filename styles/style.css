@@ -9,17 +9,17 @@
 .section_one {
   grid-area: one;
   background-color: rgb(255, 232, 168);
-  border: 15px solid rgb(253 245 207);
+  border: 1em solid rgb(253 245 207);
 }
 .section_two {
   grid-area: two;
   background-color: rgb(255, 232, 168);
-  border: 15px solid rgb(253 245 207);
+  border: 1em solid rgb(253 245 207);
 }
 .section_three {
   grid-area: three;
   background-color: rgb(255, 232, 168);
-  border: 15px solid rgb(253 245 207);
+  border: 1em solid rgb(253 245 207);
 }
 .aside {
   grid-area: aside;
@@ -28,28 +28,29 @@
 .ftr_one {
   grid-area: ftr_one;
   background-color: rgb(240, 240, 240);
-  border: 15px solid rgb(197, 197, 197);
+  border: 1em solid rgb(197, 197, 197);
 }
 .ftr_two {
   grid-area: ftr_two;
   background-color: rgb(240, 240, 240);
-  border: 15px solid rgb(197, 197, 197);
+  border: 1em solid rgb(197, 197, 197);
 }
 .ftr_three {
   grid-area: ftr_three;
   background-color: rgb(240, 240, 240);
-  border: 15px solid rgb(197, 197, 197);
+  border: 1em solid rgb(197, 197, 197);
 }
 .ftr_four {
   grid-area: ftr_four;
   background-color: rgb(240, 240, 240);
-  border: 15px solid rgb(197, 197, 197);
+  border: 1em solid rgb(197, 197, 197);
 }
 .container {
-  width: 80vw;
+  width: 100vw;
   display: grid;
+  margin: auto;
   grid-template-columns: repeat(8, 1fr);
-  grid-auto-rows: minmax(80px, auto);
+  grid-auto-rows: minmax(5em, auto);
   grid-template-areas:
     "hdr hdr hdr hdr hdr hdr hdr hdr "
     "artcl artcl artcl artcl artcl artcl aside aside "
@@ -58,4 +59,7 @@
     "ftr_one ftr_one ftr_two ftr_two ftr_three ftr_three ftr_four ftr_four";
   text-align: center;
   font-weight: bold;
+}
+.title {
+  font-size: 1em;
 }
